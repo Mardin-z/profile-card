@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&family=Jost:wght@400;500;600;700&display=swap");
+:root {
+  --grey: #e9e8ee;
+  --darkergrey: #655e65;
+  --darkGrey: rgb(226, 226, 226);
+}
+* {
+  box-sizing: border-box;
+  font-family: "Jost";
+}
+body {
+  background-color: var(--grey);
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.card {
+  background-color: var(--grey);
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px #ccc, -3px -3px 5px #fff;
+  color: var(--blue);
+  padding-top: 30px;
+  position: relative;
+  width: 100%;
+  max-width: 350px;
+  text-align: center;
+}
+.level {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  font-weight: bold;
+  color: var(--grey);
+  background-color: var(--darkergrey);
+  font-size: 14px;
+  border-radius: 3px;
+  padding: 3px 8px;
+}
+
+.card .pic {
+  box-shadow: 2px 2px 4px #ccc, -3px -3px 5px #fff;
+  border-radius: 50%;
+  padding: 4px;
+  width: 120px;
+}
+.card h2 {
+  margin: 10px 0px;
+}
+.card p {
+  font-size: 18px;
+  line-height: 1.4;
+}
+.buttons {
+  margin: 35px 0;
+}
+.buttons input {
+  background-color: var(--darkergrey);
+  border: 1px solid var(--darkergrey);
+  color: var(--grey);
+  border-radius: 3px;
+  padding: 8px 25px;
+  font-size: 18px;
+  cursor: pointer;
+}
+.buttons .secondary {
+  background-color: var(--grey);
+  color: var(--darkergrey);
+}
+.skills {
+  background-color: var(--darkGrey);
+  padding: 20px;
+  text-align: left;
+}
+.skills h4 {
+  margin: 5px 0;
+  font-size: 16px;
+}
+.skills ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.skills ul li {
+  border: 1px solid var(--darkergrey);
+  border-radius: 2px;
+  display: inline-block;
+  font-size: 14px;
+  padding: 8px;
+  margin: 0px 5px 10px 0px;
+  cursor: pointer;
+}
+.skills ul li:hover {
+  background-color: var(--darkergrey);
+  color: var(--grey);
+}
